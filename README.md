@@ -79,3 +79,60 @@ This project uses a modern backend technology stack designed for scalability, se
 ---
 
 > This stack reflects widely-used industry standards and helps ensure that the project is both maintainable and production-ready.
+## Database Design
+
+The backend is structured around a relational database that models the real-world relationships in a booking platform. Key entities and their primary fields are described below.
+
+### Entities and Main Fields
+
+- **User**
+  - `id`: Unique identifier for each user
+  - `username`: User’s display name
+  - `email`: User’s email address
+  - `password_hash`: Hashed password for authentication
+  - `created_at`: Timestamp of user registration
+
+- **Property**
+  - `id`: Unique identifier for each property
+  - `owner_id`: Reference to the user who owns/listed the property
+  - `title`: Property name or title
+  - `description`: Detailed property description
+  - `location`: Address or location details
+  - `price_per_night`: Cost for a single night’s booking
+  - `created_at`: Timestamp when the property was listed
+
+- **Booking**
+  - `id`: Unique booking identifier
+  - `user_id`: Reference to the user who made the booking
+  - `property_id`: Reference to the booked property
+  - `check_in`: Date/time for check-in
+  - `check_out`: Date/time for check-out
+  - `status`: Booking status (e.g., confirmed, cancelled)
+
+- **Payment**
+  - `id`: Unique payment transaction identifier
+  - `booking_id`: Reference to the booking being paid for
+  - `amount`: Total payment amount
+  - `payment_method`: Method used (e.g., card, PayPal)
+  - `status`: Payment status (e.g., successful, failed)
+  - `created_at`: Timestamp of the transaction
+
+- **Review**
+  - `id`: Unique review identifier
+  - `user_id`: Reference to the user leaving the review
+  - `property_id`: Reference to the property being reviewed
+  - `rating`: Numerical rating value
+  - `comment`: Written feedback
+  - `created_at`: Timestamp of the review
+
+### Entity Relationships
+
+- **A user can own multiple properties.**
+- **A property can have multiple bookings and reviews.**
+- **A booking is linked to a specific user and a specific property.**
+- **Each payment is tied to a single booking.**
+- **A review is written by a user for a property they’ve stayed at.**
+
+---
+
+> This database design ensures efficient data retrieval, supports core platform features, and maintains data integrity through clear relationships.
