@@ -202,3 +202,25 @@ Security is a core requirement for any platform that handles sensitive user data
 ---
 
 > Security is a core part of delivering a trustworthy and resilient booking platform.
+## CI/CD Pipeline
+
+Continuous Integration and Continuous Deployment (CI/CD) pipelines are essential for delivering high-quality software rapidly and reliably. In this project, CI/CD automates key stages of development, building, testing, and deploying the backend, so that code changes are integrated and released efficiently with minimal manual effort.
+
+### How CI/CD Works in This Project
+
+- **Continuous Integration:**  
+  Every time code is pushed to the repository, automated workflows check for code quality, run tests, and verify that new changes do not break existing features. This helps catch bugs early and encourages frequent, small updates.
+
+- **Continuous Deployment:**  
+  Once changes pass all tests, the pipeline can automatically build and deploy the application. This ensures that new features and fixes reach users quickly, while reducing the risk of deployment errors.
+
+### Tools Used
+
+- **GitHub Actions:**  
+  Handles workflow automation, running tests and deployment scripts on each push or pull request.
+- **Docker:**  
+  Provides a consistent environment for building, testing, and deploying the application across different systems.
+
+---
+
+> This project uses CI/CD to maintain code quality, reduces manual workload, and accelerates the delivery of new features and improvements.
