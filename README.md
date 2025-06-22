@@ -136,3 +136,28 @@ The backend is structured around a relational database that models the real-worl
 ---
 
 > This database design ensures efficient data retrieval, supports core platform features, and maintains data integrity through clear relationships.
+## Feature Breakdown
+
+Below are the core features supported by the backend for the Airbnb Clone project. Each feature is designed to reflect real-world use cases and deliver a robust booking experience.
+
+### User Management
+Handles user registration, authentication, and profile management. Users can sign up, log in securely, update their information, and manage their accounts, forming the foundation for all interactions on the platform.
+
+### Property Management
+Enables hosts to create, update, retrieve, and delete property listings. This feature ensures that property information, such as descriptions, pricing, and availability, is always up to date and discoverable by potential guests.
+
+### Booking System
+Allows users to make, update, and manage reservations for available properties. The system tracks booking dates, ensures properties aren’t double-booked, and provides hosts and guests with up-to-date booking statuses.
+
+### Payment Processing
+Facilitates secure handling of payments for property bookings. Integrates with payment gateways, tracks transaction statuses, and maintains a record of all financial operations for both guests and hosts.
+
+### Review System
+Lets users leave reviews and ratings for properties they have stayed at. This feature builds trust in the platform, helps future guests make informed choices, and gives hosts valuable feedback on their listings.
+
+### API Documentation
+All backend endpoints are documented using OpenAPI standards and GraphQL schemas. This makes integration, testing, and future maintenance straightforward for developers and third-party partners.
+
+---
+
+> These features work together to provide a seamless, secure, and transparent experience for users and hosts, closely modeling the core workflows of leading booking platforms.
