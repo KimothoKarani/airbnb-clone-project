@@ -31,3 +31,28 @@ The goal of this project is to simulate the key features and workflows of a mode
 
 > If you’re reviewing this project, feel free to explore the code, run the setup, or contact me with questions or feedback. This repo is part of my portfolio and learning journey as a backend engineer.
 
+## Team Roles
+
+Developing a scalable backend system requires clear responsibilities across several key roles. Below are the primary roles that contribute to the success of this Airbnb Clone backend project:
+
+### Backend Developer
+Designs, implements, and maintains the server-side logic, APIs, and business processes. Responsible for integrating external services, handling data processing, and ensuring code quality and security.
+
+### Database Administrator (DBA)
+Manages the design, optimization, and maintenance of the project’s database. Responsible for data integrity, backup strategies, performance tuning, and supporting efficient, secure data access.
+
+### DevOps Engineer
+Handles the automation, deployment, and monitoring of backend services. Sets up containerization (e.g., Docker), configures CI/CD pipelines (such as GitHub Actions), and ensures high availability, scalability, and reliable operations.
+
+### QA Engineer (Quality Assurance)
+Plans and executes test cases to verify the correctness and reliability of the backend. Develops automated tests, performs manual checks where needed, documents bugs, and collaborates closely with developers to deliver robust features.
+
+### Security Specialist (or Security Champion)
+Focuses on identifying and addressing security risks within the application. Implements authentication, authorization, data protection, and best practices for secure coding and compliance.
+
+### Project Manager (optional or combined role)
+Coordinates the overall project, sets timelines, manages team communication, and ensures the delivery of milestones. Tracks progress, facilitates meetings, and helps resolve obstacles throughout the project lifecycle.
+
+---
+
+> On smaller teams (or in learning environments), one person may cover several of these roles. This project simulates real-world responsibilities to encourage best practices and collaboration.
