@@ -56,3 +56,26 @@ Coordinates the overall project, sets timelines, manages team communication, and
 ---
 
 > On smaller teams (or in learning environments), one person may cover several of these roles. This project simulates real-world responsibilities to encourage best practices and collaboration.
+
+## Technology Stack
+
+This project uses a modern backend technology stack designed for scalability, security, and ease of development. Each technology plays a key role in delivering core features of the booking platform.
+
+- **Django**  
+  Serves as the primary backend web framework, enabling rapid development of robust RESTful APIs, business logic, and built-in administrative tools.
+
+- **MySQL**  
+  Provides a reliable relational database for storing and managing all structured data, including users, properties, bookings, reviews, and payments.
+
+- **GraphQL**  
+  Supports flexible and efficient querying of backend data, allowing clients to request exactly the information they need in a single request.
+
+- **Docker**  
+  Containerizes the application and its dependencies, ensuring consistency across local development, testing, and deployment environments.
+
+- **GitHub Actions**  
+  Automates continuous integration and deployment (CI/CD) workflows, running tests and deploying code changes efficiently on every push.
+
+---
+
+> This stack reflects widely-used industry standards and helps ensure that the project is both maintainable and production-ready.
