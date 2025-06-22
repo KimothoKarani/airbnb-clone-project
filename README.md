@@ -161,3 +161,44 @@ All backend endpoints are documented using OpenAPI standards and GraphQL schemas
 ---
 
 > These features work together to provide a seamless, secure, and transparent experience for users and hosts, closely modeling the core workflows of leading booking platforms.
+## API Security
+
+Security is a core requirement for any platform that handles sensitive user data, financial transactions, and personal communications. This backend implements multiple security layers to protect users, hosts, and platform integrity.
+
+### Key Security Measures
+
+- **Authentication:**  
+  Ensures that only registered users can access protected endpoints. Implements secure login and session management using hashed passwords and token-based authentication to prevent unauthorized access.
+
+- **Authorization:**  
+  Controls what each user can do based on their identity and role (guest, host, admin). Only resource owners or privileged users can modify, delete, or access specific data, preventing misuse and data leaks.
+
+- **Input Validation and Sanitization:**  
+  All data received from users is validated and sanitized to prevent attacks such as SQL injection, cross-site scripting (XSS), and other forms of malicious input.
+
+- **Rate Limiting:**  
+  Limits the number of requests a user or IP can make in a set timeframe. This defends against brute-force attacks and abuse of the API, ensuring stable performance for all users.
+
+- **HTTPS Enforcement:**  
+  The platform is designed to run over HTTPS, encrypting all data in transit between clients and the server, protecting sensitive information from interception.
+
+- **Audit Logging:**  
+  Key actions (such as login attempts, booking changes, and payments) are logged to enable monitoring, alerting, and forensic analysis in the event of suspicious activity.
+
+### Why Security Matters
+
+- **Protecting User Data:**  
+  Users trust the platform with their personal and financial information. Robust security prevents data breaches and builds confidence in the service.
+
+- **Securing Payments:**  
+  All payment transactions must be secure to prevent fraud, unauthorized charges, and loss of funds for both guests and hosts.
+
+- **Preventing Abuse:**  
+  Security measures such as authorization and rate limiting ensure that platform features cannot be misused by attackers or abusive users.
+
+- **Compliance:**  
+  Implementing strong security aligns with industry standards and legal requirements (such as GDPR or PCI DSS), supporting future scalability and trust.
+
+---
+
+> Security is a core part of delivering a trustworthy and resilient booking platform.
